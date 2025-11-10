@@ -32,17 +32,14 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 70px;
-    /* increased header height */
 }
 
-/* Logo on the left */
 .logo {
     color: white;
     font-weight: bold;
     font-size: 1.4rem;
 }
 
-/* Left side nav (Home, Menu, Gallery) */
 .nav-left {
     display: flex;
     gap: 2rem;
@@ -56,7 +53,6 @@ nav {
     font-size: 1rem;
 }
 
-/* Right side nav (Contact, About) */
 .nav-right {
     display: flex;
     gap: 2rem;
@@ -70,7 +66,6 @@ nav {
     font-size: 1rem;
 }
 
-/* Responsive adjustment for smaller screens */
 @media (max-width: 768px) {
     nav {
         flex-wrap: wrap;
@@ -104,3 +99,4 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
