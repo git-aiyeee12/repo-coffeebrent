@@ -85,3 +85,254 @@ footer img {
 footer a:hover {
     opacity: 0.7;
 }
+
+.cta-button {
+    background-color: #d2691e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #a0522d;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
+
+.page {
+    min-height: 100vh;
+    padding-top: 80px;
+    display: none;
+}
+
+.teaser {
+    margin-top: 90px;
+    margin-left: 80px;
+    width: 95%;
+    height: 605px;
+}
+
+.welcome {
+    margin-top: 10px;
+    margin-left: 35px;
+    float: right;
+    height: 88%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.welcome h3 {
+    font-family: "Times New Roman", Times, serif;
+    color: #7f5539;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 60px;
+}
+
+#p1 {
+    font-family: "Times New Roman", Times, serif;
+    color: #7f5539;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#p2 {
+    font-family: "Times New Roman", Times, serif;
+    color: #7f5539;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+}
+
+.welcome a {
+    color: #f4f1e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 30%;
+    height: 50px;
+    width: 190px;
+    border: 1px solid #7f5539;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #7f5539;
+}
+
+.testimonial {
+    margin-top: 90px;
+    margin-left: 80px;
+    width: 85%;
+    height: 605px;
+}
+
+.testimonial p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #7f5539;
+    font-size: 30px;
+    position: relative;
+    left: 5%;
+    top: 280px;
+    display: flex;
+}
+
+.top-frame {
+    width: 10%;
+    height: 30%;
+}
+
+.bottom-frame {
+    width: 60%;
+    height: 40%;
+}
+
+.testimonial a {
+    color: #f4f1e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 20%;
+    top: 60%;
+    height: 50px;
+    width: 190px;
+    border: 1px solid #7f5539;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #7f5539;
+}
+
+.menu-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.menu-item h3 {
+    color: #8b4513;
+}
+
+.special-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.special-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.special-item h2 {
+    color: #8b4513;
+    margin: 10px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.photos img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contact-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.map {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    text-align: center;
+}
+
+.about {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .gallery,
+    .photos grid-template-columns: 1fr;
+}
