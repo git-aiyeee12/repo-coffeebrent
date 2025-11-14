@@ -461,5 +461,7 @@ figcaption {
 
 @media (max-width: 768px) {
     .gallery,
-    .photos grid-template-columns: 1fr;
+    .photos {
+        grid-template-columns: 1fr;
+    }
 }
