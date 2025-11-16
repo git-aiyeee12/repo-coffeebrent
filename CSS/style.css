@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     background-color: #f4f1e8;
@@ -137,7 +137,6 @@ footer a:hover {
 }
 
 .welcome h3 {
-    font-family: "Times New Roman", Times, serif;
     color: #7f5539;
     font-size: 40px;
     text-align: center;
@@ -146,7 +145,6 @@ footer a:hover {
 }
 
 #p1 {
-    font-family: "Times New Roman", Times, serif;
     color: #7f5539;
     font-size: 50px;
     font-weight: bold;
@@ -155,7 +153,6 @@ footer a:hover {
 }
 
 #p2 {
-    font-family: "Times New Roman", Times, serif;
     color: #7f5539;
     font-size: 20px;
     text-align: center;
@@ -187,7 +184,6 @@ footer a:hover {
 }
 
 .testimonial p {
-    font-family: 'Times New Roman', Times, serif;
     color: #7f5539;
     font-size: 30px;
     position: relative;
@@ -245,57 +241,104 @@ footer a:hover {
 }
 
 .products-header h2 {
-    font-family: "Montserrat", sans-serif;
     margin: 0 0 14px;
     color: #222;
 }
 
 .product-grid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
 }
 
 .card {
-    background: var(--card);
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 6px 20px rgba(29, 29, 29, 0.06);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    transition: 0.3s;
+    width: 200px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #aaa;
+    width: 400px;
+}
+
+.image-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
 }
 
 .card img {
-    width: 100%;
-    display: block;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
-.card-body {
-    padding: 14px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex: 1;
-    justify-content: space-between;
-}
-
-.card-body h4 {
+.card h4 {
     margin: 0;
-    font-size: 16px;
-    color: #333;
+    font-size: 18px;
+    text-align: center;
+}
+
+.description-overlay {
+    flex: 1;
+    padding: 10px;
+    display: none;
+}
+
+.card:hover .description-overlay {
+    display: block;
+}
+
+.ingredients {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #4b4949;
 }
 
 .card-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: left;
 }
 
-.price {
-    color: var(--brown);
-    font-weight: 700;
+.price-display {
+    display: none;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.size-options {
+    display: block;
+}
+
+.size-button {
+    display: inline-block;
+    margin: 5px 5px 5px 0;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.size-button:hover {
+    background-color: #e6ccb2;
+}
+
+.size-button.selected {
+    background-color: #d4a574;
+    border-color: #b8956a;
 }
 
 .gallery-wrap {
@@ -460,6 +503,7 @@ figcaption {
 }
 
 @media (max-width: 768px) {
+
     .gallery,
     .photos {
         grid-template-columns: 1fr;
