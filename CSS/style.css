@@ -118,42 +118,14 @@ footer a:hover {
     display: none;
 }
 
-.teaser {
+.introduction {
     position: relative;
     min-height: 100vh;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
 }
 
-.welcome {
-    position: absolute;
-    width: 550px;
-    height: 400px;
-    line-height: 0.3;
-}
-
-#p1 {
-    font-size: 60px;
-    color: #291208;
-}
-
-#p4 {
-    font-size: 60px;
-    font-weight: bold;
-    color: #291208;
-}
-
-#p2 {
-    font-size: 60px;
-    color: #678F00;
-}
-
-#p3 {
-    font-size: 25px;
-    color: #291208;
-    line-height: normal;
-}
-
-.teaser a {
+.introduction a {
     position: absolute;
     top: 390px;
     width: 121px;
@@ -163,57 +135,29 @@ footer a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     border: 1px solid #7f5539;
     border-radius: 14px;
     text-decoration: none;
     background-color: #7f5539;
 }
 
-.redr {
+.brown-circle {
     position: absolute;
-    left: 301px;
-    top: 530px;
-    width: 120px;
+    left: 597px;
+    top: 150px;
+    width: 1000px;
+    height: 900px;
 }
 
-#straw {
+.green-circle {
     position: absolute;
-    top: 485px;
-    left: 295px;
-    width: 140px;
+    left: 597px;
+    top: 150px;
+    width: 1000px;
+    height: 900px;
 }
 
-
-.greenr {
-    position: absolute;
-    left: 151px;
-    top: 530px;
-    width: 120px;
-}
-
-#match {
-    position: absolute;
-    top: 485px;
-    left: 145px;
-    width: 140px;
-}
-
-.brownr {
-    position: absolute;
-    left: 1px;
-    top: 530px;
-    width: 120px;
-}
-
-#choco {
-    position: absolute;
-    top: 485px;
-    left: -7px;
-    width: 140px;
-}
-
-.circle {
+.red-circle {
     position: absolute;
     left: 597px;
     top: 150px;
@@ -228,12 +172,147 @@ footer a:hover {
     width: 720px;
 }
 
-.chocolater {
+.chocolate-featured {
     position: absolute;
-    top: 3px;
-    left: 570px;
-    width: 700px;
+    top: 0.1875em;
+    left: 35.625em;
+    width: 43.75em;
     transform: rotate(-13deg);
+}
+
+.matcha-featured {
+    position: absolute;
+    top: 2.8em;
+    left: 38em;
+    width: 42em;
+    transform: rotate(-13deg);
+}
+
+.strawberry-featured {
+    position: absolute;
+    top: 2.8em;
+    left: 38em;
+    width: 42em;
+    transform: rotate(-13deg);
+}
+
+.circles {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+#chocolate-feature:checked~.drinks-display~.colored-circles .brown-circle {
+    opacity: 1;
+}
+
+#matcha-feature:checked~.drinks-display~.colored-circles .green-circle {
+    opacity: 1;
+}
+
+#strawberry-feature:checked~.drinks-display~.colored-circles .red-circle {
+    opacity: 1;
+}
+
+.feature {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+#chocolate-feature:checked~.drinks-display~.drinks-featured .chocolate-featured {
+    opacity: 1;
+}
+
+#matcha-feature:checked~.drinks-display~.drinks-featured .matcha-featured {
+    opacity: 1;
+}
+
+#strawberry-feature:checked~.drinks-display~.drinks-featured .strawberry-featured {
+    opacity: 1;
+}
+
+.welcome {
+    position: absolute;
+    width: 550px;
+    height: 400px;
+    font-size: 60px;
+    line-height: 0.3;
+    color: #291208;
+}
+
+.welcome .brand {
+    font-weight: bold;
+}
+
+.welcome .price {
+    color: #678F00;
+}
+
+.welcome .story {
+    font-size: 25px;
+    line-height: normal;
+}
+
+.drinks-display {
+    position: relative;
+    top: 33.125em;
+    width: 325px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rectangle {
+    width: 6em;
+    height: 7.5em;
+    border-radius: 20px;
+}
+
+.img-drink {
+    position: absolute;
+    top: -25px;
+    width: 100px;
+}
+
+.desc-drink {
+    position: relative;
+    top: -55px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 13px;
+    color: white;
+}
+
+.one {
+    background-color: #986749;
+}
+
+.two {
+    background-color: #9F9250;
+}
+
+.three {
+    background-color: #B6776B;
+}
+
+.rectangle,
+.img-drink,
+.desc-drink {
+    transition: top 0.3s ease;
+}
+
+#chocolate-feature:checked~.drinks-display label[for="chocolate-feature"] .rectangle,
+#chocolate-feature:checked~.drinks-display label[for="chocolate-feature"] .img-drink {
+    top: -2em;
+}
+
+#matcha-feature:checked~.drinks-display label[for="matcha-feature"] .rectangle,
+#matcha-feature:checked~.drinks-display label[for="matcha-feature"] .img-drink {
+    top: -2em;
+}
+
+#strawberry-feature:checked~.drinks-display label[for="strawberry-feature"] .rectangle,
+#strawberry-feature:checked~.drinks-display label[for="strawberry-feature"] .img-drink {
+    top: -2em;
 }
 
 .testimonial {
