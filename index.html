@@ -30,41 +30,73 @@
     </header>
     <div id="homepage" class="page">
         <div class="container">
-            <div class="teaser">
+            <div class="introduction">
+                <a href="#menu" class="cta-button">See our Menu</a>
+
                 <div class="welcome">
-                    <p id="p1">Welcome to</p>
-                    <p id="p4">Coffee Brent!</p>
-                    <p id="p2">₱159.00</p>
-                    <p id="p3">From a small cart in Pasig to your favorite sip!<br>Explore our story, menu, and
+                    <p>Welcome to</p>
+                    <p class="brand">Coffee Brent!</p>
+                    <p class="price">₱89.00</p>
+                    <p class="story">From a small cart in Pasig to your favorite sip!<br>Explore our story, menu, and
                         community.</p>
                 </div>
-                <a href="#menu" class="cta-button">See our Menu</a>
-                <img class="redr" src="CSS/img/redrectangle.png">
-                <img id="straw" src="CSS/img/Strawberry.png">
-                <img class="greenr" src="CSS/img/greenrectangle.png">
-                <img id="match" src="CSS/img/Matcha.png">
-                <img class="brownr" src="CSS/img/brownrectangle.png">
-                <img id="choco" src="CSS/img/Chocolate.png">
-                <img class="circle" src="CSS/img/browncircle.png">
-                <img class="beans" src="CSS/img/Coffeebeans.png">
-                <img class="chocolater" src="CSS/img/Chocolate.png">
-            </div>
-            <div class="testimonial">
-                <p>"Every cup feels like home!" - Happy Customer</p>
-                <a href="#about" class="cta-button">See our Story</a>
-                <div class="testimonial-img">
-                    <img src="css/IMG/c5.png"
-                        style="width: 25%; height: 25%; float: right; margin-top: 40    px; margin-right: 10px; display: flex;">
+
+                <input type="radio" name="drink" id="chocolate-feature" hidden checked>
+                <input type="radio" name="drink" id="matcha-feature" hidden>
+                <input type="radio" name="drink" id="strawberry-feature" hidden>
+
+                <div class="drinks-display">
+                    <label class="drink-card" for="chocolate-feature">
+                        <div class="rectangle one"></div>
+                        <img src="CSS/img/Chocolate.png" class="img-drink">
+                        <p class="desc-drink">Chocolate<br>₱89.00</p>
+                    </label>
+
+                    <label class="drink-card" for="matcha-feature">
+                        <div class="rectangle two"></div>
+                        <img src="CSS/img/Matcha.png" class="img-drink">
+                        <p class="desc-drink">Matcha<br>₱89.00</p>
+                    </label>
+
+                    <label class="drink-card" for="strawberry-feature">
+                        <div class="rectangle three"></div>
+                        <img src="CSS/img/Strawberry.png" class="img-drink">
+                        <p class="desc-drink">Strawberry<br>₱89.00</p>
+                    </label>
                 </div>
-                <div class="top-frame">
-                    <img src="css/IMG/c4rb.png" style="width: 50px; height: 50px; transform: rotate(90deg);">
+
+                <div class="colored-circles">      
+                    <img src="CSS/img/browncircle.png" class="circles brown-circle">                     
+                    <img src="CSS/img/greencircle.png" class="circles green-circle">               
+                    <img src="CSS/img/redcircle.png" class="circles red-circle">                                           
                 </div>
-                <div class="bottom-frame">
-                    <img src="css/IMG/c4rb.png"
-                        style="width: 50px; height: 50px; transform: rotate(0.75turn); position: relative; top: 60%; left: 100%;">
+
+                <img src="CSS/img/Coffeebeans.png" class="beans">
+
+                <div class="drinks-featured">
+                    <img src="CSS/img/Chocolate.png" class="feature chocolate-featured">
+                    <img src="CSS/img/Matcha.png" class="feature matcha-featured">
+                    <img src="CSS/img/Strawberry.png" class="feature strawberry-featured">
                 </div>
+
             </div>
         </div>
+        <div class="testimonial">
+            <p>"Every cup feels like home!" - Happy Customer</p>
+            <a href="#about" class="cta-button">See our Story</a>
+            <div class="testimonial-img">
+                <img src="css/IMG/c5.png"
+                    style="width: 25%; height: 25%; float: right; margin-top: 40    px; margin-right: 10px; display: flex;">
+            </div>
+            <div class="top-frame">
+                <img src="css/IMG/c4rb.png" style="width: 50px; height: 50px; transform: rotate(90deg);">
+            </div>
+            <div class="bottom-frame">
+                <img src="css/IMG/c4rb.png"
+                    style="width: 50px; height: 50px; transform: rotate(0.75turn); position: relative; top: 60%; left: 100%;">
+            </div>
+        </div>
+    </div>
     </div>
     <div id="menu" class="page">
         <div class="container">
@@ -425,23 +457,23 @@
                         <img src="">
                         <div class="card-body">
                             <h3>Pistachio Frappe</h3>
-                             <div class="card-meta"> 
+                            <div class="card-meta">
                                 <span class="price">120 PHP</span>
                             </div>
                         </div>
                     </article>
                     <article class="card">
-                         <img src="">
-                     <div class="card-body">   
+                        <img src="">
+                        <div class="card-body">
                             <h3>Matcha Frappe</h3>
-                           <div class="card-meta"> 
-                                 <span class="price">120 PHP</span>
+                            <div class="card-meta">
+                                <span class="price">120 PHP</span>
                             </div>
-                     </div>
+                        </div>
                     </article>
                     </article>
-                        <article class="card">
-                            <img src="">
+                    <article class="card">
+                        <img src="">
                         <div class="card-body">
                             <h3>Matcha Overload Frappe</h3>
                             <div class="card-meta">
@@ -450,8 +482,8 @@
                         </div>
                     </article>
                     </article>
-                        <article class="card">
-                            <img src="">
+                    <article class="card">
+                        <img src="">
                         <div class="card-body">
                             <h3>Classic Mocha Frappe</h3>
                             <div class="card-meta">
@@ -460,8 +492,8 @@
                         </div>
                     </article>
                     </article>
-                        <article class="card">
-                            <img src="">
+                    <article class="card">
+                        <img src="">
                         <div class="card-body">
                             <h3>Espresso Brownies</h3>
                             <div class="card-meta">
@@ -470,7 +502,7 @@
                         </div>
                     </article>
                     <article class="card">
-                            <img src="">
+                        <img src="">
                         <div class="card-body">
                             <h3>vanilla cream</h3>
                             <div class="card-meta">
@@ -479,16 +511,16 @@
                         </div>
                     </article>
                     <article class="card">
-                            <img src="">
+                        <img src="">
                         <div class="card-body">
-                            <h3>Mango  yogurt-cheesecake</h3>
+                            <h3>Mango yogurt-cheesecake</h3>
                             <div class="card-meta">
                                 <span class="price">150 PHP</span>
                             </div>
                         </div>
                     </article>
                     <article class="card">
-                            <img src="">
+                        <img src="">
                         <div class="card-body">
                             <h3>Chocolate chip-cheesecake</h3>
                             <div class="card-meta">
