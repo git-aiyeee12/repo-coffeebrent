@@ -122,6 +122,14 @@ footer a:hover {
   display: block;
 }
 
+#homepage {
+  display: block;
+}
+
+:target ~ #homepage {
+  display: none;
+}
+
 .introduction {
   position: relative;
   min-height: 100vh;
