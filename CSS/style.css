@@ -113,9 +113,13 @@ footer a:hover {
 }
 
 .page {
-    min-height: 100vh;
-    padding-top: 80px;
-    display: none;
+  min-height: 100vh;
+  padding-top: 80px;
+  display: none;
+}
+
+:target.page {
+  display: block;
 }
 
 .introduction {
