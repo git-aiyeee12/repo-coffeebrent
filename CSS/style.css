@@ -469,7 +469,7 @@ footer a:hover {
 .card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-color: #aaa;
-  width: 400px;
+  width: 350px;
 }
 
 .image-container {
@@ -485,6 +485,22 @@ footer a:hover {
   object-fit: cover;
   border-radius: 4px;
   margin-bottom: 10px;
+  cursor: zoom-in;
+}
+
+.card img:active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  cursor: zoom-out;
+  border-radius: 6px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
 }
 
 .card h4 {
