@@ -126,7 +126,7 @@ footer a:hover {
   display: block;
 }
 
-:target ~ #homepage {
+:target~#homepage {
   display: none;
 }
 
@@ -328,56 +328,56 @@ footer a:hover {
 }
 
 .testimonial {
-    position: relative;
-    min-height: 100vh;
-    margin-top: 80px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
+  position: relative;
+  min-height: 100vh;
+  margin-top: 80px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
 }
 
 .testimonial_title {
-    position: absolute;
-    width: 550px;
-    height: 400px;
-    font-size: 60px;
-    line-height: 0.3;
-    color: #291208;
+  position: absolute;
+  width: 550px;
+  height: 400px;
+  font-size: 60px;
+  line-height: 0.3;
+  color: #291208;
 }
 
 .customer_img {
-    position: absolute;
-    top: 0.1875em;
-    left: 59.625em;
-    width: 25.75em;
+  position: absolute;
+  top: 0.1875em;
+  left: 59.625em;
+  width: 25.75em;
 }
 
 .horizontal_line {
-    position: absolute;
-    top: 25.1875em;
-    left: 37.4em;
+  position: absolute;
+  top: 25.1875em;
+  left: 37.4em;
 }
 
 .latte_design {
-    position: absolute;
-    top: 5.1875em;
-    width: 25.75em;
+  position: absolute;
+  top: 5.1875em;
+  width: 25.75em;
 }
 
 .white_border {
-    position: absolute;
-    top: 23.89em;
-    left: 30.9em;
-    width: 100px;
-    height: 40px;
-    font-size: 16px;
-    font-weight: bolder;
-    letter-spacing: 0.2em;
-    color: #533825;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 4px solid #fff;
-    border-radius: 14px;
+  position: absolute;
+  top: 23.89em;
+  left: 30.9em;
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bolder;
+  letter-spacing: 0.2em;
+  color: #533825;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #fff;
+  border-radius: 14px;
   margin-top: 90px;
   margin-left: 80px;
   width: 85%;
@@ -500,7 +500,7 @@ footer a:hover {
   z-index: 9999;
   cursor: zoom-out;
   border-radius: 6px;
-  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
 }
 
 .card h4 {
