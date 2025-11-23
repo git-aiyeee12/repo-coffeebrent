@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: auto;
   padding: 10px;
 }
@@ -333,64 +333,62 @@ footer a:hover {
   margin-top: 80px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 16px;
+  background-color: white;
 }
 
-.testimonial_title {
+.testimonial_title h2 {
   position: absolute;
   width: 550px;
   height: 400px;
   font-size: 60px;
-  line-height: 0.3;
+  line-height: 1;
   color: #291208;
 }
 
 .customer_img {
   position: absolute;
-  top: 0.1875em;
-  left: 59.625em;
+  top: 130px;
+  left: 56.625em;
   width: 25.75em;
 }
 
 .horizontal_line {
   position: absolute;
-  top: 25.1875em;
+  top: 550px;
   left: 37.4em;
 }
 
 .latte_design {
-  position: absolute;
-  top: 5.1875em;
+  position: relative;
+  top: 180px;
   width: 25.75em;
 }
 
-.white_border {
+.testimonial_desc {
+  color: #7f5539;
+  font-size: 30px;
   position: absolute;
-  top: 23.89em;
-  left: 30.9em;
-  width: 100px;
-  height: 40px;
-  font-size: 16px;
+  left: 33%;
+  top: 180px;
+  display: flex;
+}
+
+.white_border {
+  width: 160px;
+  height: 50px;
+  font-size: 24px;
   font-weight: bolder;
   letter-spacing: 0.2em;
+  line-height: 0.3;
   color: #533825;
-  display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   border: 4px solid #fff;
-  border-radius: 14px;
-  margin-top: 90px;
-  margin-left: 80px;
-  width: 85%;
-  height: 605px;
-}
-
-.testimonial p {
-  color: #7f5539;
-  font-size: 30px;
-  position: relative;
-  left: 5%;
-  top: 280px;
-  display: flex;
+  border-radius: 20px;
+  position: absolute;
+  top: 65%;
+  left: 33%;
 }
 
 .top-frame {
@@ -408,9 +406,9 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  left: 20%;
-  top: 60%;
+  position: absolute;
+  left: 30%;
+  top: 80%;
   height: 50px;
   width: 190px;
   border: 1px solid #7f5539;
