@@ -968,8 +968,6 @@ figcaption {
   font-size: 12px;
 }
 
-
-
 .section {
   max-width: 900px;
   margin: 40px auto;
@@ -1008,7 +1006,6 @@ p.description {
   border: 2px solid #e6dfd7;
   display: block;
 }
-
 
 .coffee-about {
   width: 100%;
@@ -1074,7 +1071,6 @@ p.description {
     transform: translateY(0);
   }
 }
-
 
 @media (max-width: 900px) {
   .hero-content {
