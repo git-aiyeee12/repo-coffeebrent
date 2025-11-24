@@ -1079,7 +1079,7 @@ p.description {
 
 .coffee-left p,
 .coffee-right p {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.7;
   margin: 25px 0;
 }
@@ -1109,12 +1109,42 @@ p.description {
     flex-direction: column;
   }
 
-  .hero-left,
-  .hero-right {
-    width: 100%;
+  .coffee-left,
+  .coffee-right {
+    width: 50%;
   }
 
-  .hero-text-big {
-    font-size: 40px;
+  .coffee-text-big {
+    font-size: 20px;
   }
+}.coffee-img {
+  background: #f2e2ce;   
+  padding: 15px;          
+  border-radius: 35px;    
+  display: block;
+  width: 100%;            
+  box-sizing: border-box;}
+
+.bottom-center-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
 }
+
+.bottom-center-text p {
+    max-width: 900px;
+    margin: auto;
+    font-size: 21px;
+    line-height: 1.8;
+    color: #fff2e3;
+    font-family: 'Georgia', serif;
+
+    background: rgba(0, 0, 0, 0.45);
+    padding: 25px;
+    border-radius: 12px;
+}
+
