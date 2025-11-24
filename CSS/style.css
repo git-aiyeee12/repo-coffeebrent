@@ -1041,6 +1041,7 @@ p.description {
   background: linear-gradient(180deg, #5a3f2e, #c49a6c);
   color: white;
   font-family: 'Georgia', serif;
+  animation: fadeUp 1.3s ease-out;
 }
 
 .coffee-overlay {
@@ -1082,10 +1083,6 @@ p.description {
   object-fit: cover;
   margin-bottom: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-}
-
-.coffee-about {
-  animation: fadeUp 1.3s ease-out;
 }
 
 @keyframes fadeUp {
