@@ -618,36 +618,36 @@
                 </figure>
             </div>
             <div class="center-controls">
-                <a href="#customer-photos" class="cta-button">Customer Photos</a>
+                <a href="#customer-photos" class="cta-button"
+                    onclick="document.getElementById('customer-photos').scrollIntoView({behavior: 'smooth'}); return false;">Customer
+                    Photos</a>
             </div>
         </div>
-    </div>
-</div>
-<div id="customer-photos" class="page">
-    <div class="container">
-        <div class="gallery-wrap">
-            <div class="grid">
-                <figure class="item tall" aria-labelledby="label-cart">
-                    <figcaption id="label-cart">Cart Setup</figcaption>
-                    <div class="placeholder" role="img" aria-label="Cart Setup image placeholder"></div>
-                </figure>
-                <div class="middle-col">
-                    <figure class="item wide" aria-labelledby="label-signature">
-                        <figcaption id="label-signature">Signature Drinks</figcaption>
-                        <div class="placeholder" role="img" aria-label="Signature Drinks image placeholder"></div>
+        <section id="customer-photos">
+            <div class="gallery-wrap">
+                <div class="grid">
+                    <figure class="item tall" aria-labelledby="label-cart">
+                        <figcaption id="label-cart">Cart Setup</figcaption>
+                        <div class="placeholder" role="img" aria-label="Cart Setup image placeholder"></div>
                     </figure>
-                    <figure class="item wide" aria-labelledby="label-moments">
-                        <figcaption id="label-moments">Moments from Events</figcaption>
-                        <div class="placeholder" role="img" aria-label="Moments from Events image placeholder">
-                        </div>
+                    <div class="middle-col">
+                        <figure class="item wide" aria-labelledby="label-signature">
+                            <figcaption id="label-signature">Signature Drinks</figcaption>
+                            <div class="placeholder" role="img" aria-label="Signature Drinks image placeholder"></div>
+                        </figure>
+                        <figure class="item wide" aria-labelledby="label-moments">
+                            <figcaption id="label-moments">Moments from Events</figcaption>
+                            <div class="placeholder" role="img" aria-label="Moments from Events image placeholder">
+                            </div>
+                        </figure>
+                    </div>
+                    <figure class="item tall" aria-labelledby="label-behind">
+                        <figcaption id="label-behind">Behind the Scenes</figcaption>
+                        <div class="placeholder" role="img" aria-label="Behind the Scenes image placeholder"></div>
                     </figure>
                 </div>
-                <figure class="item tall" aria-labelledby="label-behind">
-                    <figcaption id="label-behind">Behind the Scenes</figcaption>
-                    <div class="placeholder" role="img" aria-label="Behind the Scenes image placeholder"></div>
-                </figure>
             </div>
-        </div>
+        </section>
     </div>
 </div>
 <div id="contact" class="page">
