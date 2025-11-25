@@ -1138,7 +1138,7 @@ p.description {
 .bottom-center-text p {
     max-width: 900px;
     margin: auto;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 1.8;
     color: #fff2e3;
     font-family: 'Georgia', serif;
@@ -1147,4 +1147,70 @@ p.description {
     padding: 25px;
     border-radius: 12px;
 }
+@media (max-width: 900px) {
+  .coffee-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .coffee-left,
+  .coffee-right {
+    width: 100%;
+  }
+
+  .coffee-text-big {
+    font-size: 36px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+
+  .coffee-left p,
+  .coffee-right p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px 0;
+  }
+
+  .coffee-img {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 20px;
+  }
+
+  .coffee-overlay {
+    top: 20px;
+  }
+
+  .bottom-center-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .coffee-text-big {
+    font-size: 28px;
+  }
+
+  .coffee-left p,
+  .coffee-right p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .coffee-img {
+    max-width: 280px;
+  }
+
+  .bottom-center-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 30px;
+  }
+}
+
 
