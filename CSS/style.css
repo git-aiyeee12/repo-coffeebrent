@@ -1047,9 +1047,13 @@ p.description {
   background: linear-gradient(180deg, #5a3f2e, #c49a6c);
   color: white;
   font-family: 'Georgia', serif;
+}
+.coffee-text-big,
+.coffee-left p,
+.coffee-right p,
+.coffee-img {
   animation: fadeUp 1.3s ease-out;
 }
-
 .coffee-overlay {
   width: 90%;
   max-width: 1200px;
