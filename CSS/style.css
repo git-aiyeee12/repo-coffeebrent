@@ -557,6 +557,149 @@ footer a:hover {
   background-color: #99582a;
 }
 
+@media (max-width: 480px) {
+  .introduction {
+    position: relative;
+    height: 500px;
+    font-size: 14px;
+    padding: 1em;
+  }
+
+  .introduction a {
+    top: 350px;
+  }
+
+  .welcome {
+    font-size: 30px;
+  }
+
+  .red-circle, .brown-circle, .green-circle {
+    left: 130px;
+    top: 3px;
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+  }
+
+  .drinks-display {
+    top: 30em;
+    left: -3.9em;
+  }
+
+  .chocolate-featured {
+    left: 5em;
+    width: 
+  }
+
+  .rectangle {
+    width: 4em;
+    height: 5.5em;
+  }
+
+  .desc-drink {
+    font-size: 9px;
+    top: -40px
+  }
+
+  .img-drink {
+    width: 60px;
+    top: -20px;
+  }
+
+  .welcome .story {
+    font-size: 15px;
+  }
+
+  .testimonial {
+    position: relative;
+    height: 500px;
+    margin-top: 2em;
+    top: auto;
+    font-size: 14px;
+    padding: 0 1em;
+  }
+
+  .testimonial_title h2 {
+    position: absolute;
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 1em auto;
+  }
+
+  .customer_img {
+    position: absolute;
+    top: 15em;
+    left: 10em;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    margin: 1em auto;
+  }
+
+  .horizontal_line {
+    position: absolute;
+    top: auto;
+    left: auto;
+    width: 80%;
+    max-width: 300px;
+    margin: 1em auto;
+  }
+
+  .latte_design {
+    position: absolute;
+    top: 15em;
+    width: 80%;
+    max-width: 300px;
+    margin: 1em auto;
+  }
+
+  .testimonial_desc {
+    position: absolute;
+    left: 0;
+    top: auto;
+    font-size: 16px;
+    margin: 1em 0;
+  }
+
+  .white_border {
+    position: absolute;
+    top: auto;
+    left: auto;
+    width: 60%;
+    max-width: 200px;
+    height: auto;
+    font-size: 14px;
+    margin: 1em auto;
+  }
+
+  .top-frame {
+    width: 50%;
+    height: auto;
+    margin: 1em auto;
+  }
+
+  .bottom-frame {
+    width: 80%;
+    height: auto;
+    margin: 1em auto;
+  }
+
+  .testimonial a {
+    position: absolute;
+    left: auto;
+    top: auto;
+    width: 80%;
+    max-width: 150px;
+    height: 40px;
+    margin: 1em auto;
+    font-size: 14px;
+  }
+}
+
 .ads {
   display: grid;
   grid-template-columns: 1fr 1fr;
