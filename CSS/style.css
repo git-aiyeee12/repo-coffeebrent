@@ -700,22 +700,210 @@ footer a:hover {
   }
 }
 
-.ads {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-  align-items: center;
-  background-color: #5d3419;
-  height: 500px;
-  padding: 35px;
+.slider-wrapper {
+  max-width: 1200px;
+  width: 95%;
 }
 
-.ads-left h1 {
+.slider {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 450px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.slider input {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 33.333%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background-color: #432818;
   color: #f4f1e8;
+  border-radius: 10px;
 }
 
-.ads-left {
-  max-width: 520px;
+.slide-left {
+  width: 40%;
+  padding: 60px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.slide-left h1 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  color: white;
+}
+
+.slide-left p {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  margin-bottom: 30px;
+  line-height: 1.5;
+  max-width: 450px;
+}
+
+.slide-right {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8em;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  z-index: 2;
+  opacity: 0.8;
+  transition: opacity 0.2s, background 0.2s;
+  display: none;
+}
+
+.nav-arrow:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#slide1:checked~.next1,
+#slide2:checked~.prev2,
+#slide2:checked~.next2,
+#slide3:checked~.prev3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev2,
+.prev3 {
+  left: 15px;
+}
+
+.next1,
+.next2 {
+  right: 15px;
+}
+
+#slide1:checked~.slides {
+  transform: translateX(0%);
+}
+
+#slide2:checked~.slides {
+  transform: translateX(-33.333%);
+}
+
+#slide3:checked~.slides {
+  transform: translateX(-66.666%);
+}
+
+.dots {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+  left: 0;
+  z-index: 3;
+  padding: 0 15px;
+}
+
+.dots label {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.dots label:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#slide1:checked~.dots label[for="slide1"],
+#slide2:checked~.dots label[for="slide2"],
+#slide3:checked~.dots label[for="slide3"] {
+  background-color: #F5B83B;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .slider {
+    height: auto;
+  }
+
+  .slide {
+    flex-direction: column;
+  }
+
+  .slide-left {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    align-items: center;
+    min-height: 200px;
+  }
+
+  .slide-left h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .slide-left p {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+  }
+
+  .slide-right {
+    width: 100%;
+    height: 320px;
+  }
+
+  .nav-arrow {
+    top: 50%;
+  }
+
+  .dots {
+    position: static;
+    margin-top: 15px;
+  }
 }
 
 .products-section {
@@ -1564,6 +1752,14 @@ footer a:hover {
   border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+
+  .gallery,
+  .photos {
+    grid-template-columns: 1fr;
+  }
+}
+
 .contact-info {
   background-color: white;
   padding: 20px;
@@ -1606,11 +1802,19 @@ footer a:hover {
   margin: 20px 0;
 }
 
-@media (max-width: 768px) {
+.hero {
+  width: 100%;
+  height: 450px;
+  background-image: url("../CSS/img/coffee-brent.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
-  .gallery,
-  .photos {
-    grid-template-columns: 1fr;
+@media (max-width: 768px) {
+  .hero {
+    background-attachment: scroll;
   }
 }
 
@@ -1760,6 +1964,18 @@ p.description {
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
   border: 2px solid #e6dfd7;
   display: block;
+  margin: 0 auto;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.rate-image:hover {
+  transform: scale(1.2);
+  cursor: zoom-out;
+}
+
+.rate-image:active {
+  transform: scale(1.3);
 }
 
 .coffee-about {

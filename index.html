@@ -28,15 +28,55 @@
 </header>
 <div id="menu" class="page">
     <div class="container">
-        <section class="ads">
-            <div class="ads-left">
-                <h1>Our Menu</h1>
-                <a href="#specials" class="cta-button">Specials</a>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+
+                <label for="slide2" class="nav-arrow next1">&gt;</label>
+                <label for="slide1" class="nav-arrow prev2">&lt;</label>
+                <label for="slide3" class="nav-arrow next2">&gt;</label>
+                <label for="slide2" class="nav-arrow prev3">&lt;</label>
+                <div class="slides">
+                    <div class="slide">
+                        <div class="slide-left">
+                            <h1>Seasonal Delights</h1>
+                            <p>Try our limited-time drinks and<br>exclusive menu items before they're gone!</p>
+                            <a href="#specials" class="cta-button">Special Menu</a>
+                        </div>
+                        <div class="slide-right">
+                            <img src="CSS/img/delights.jpg">
+                        </div>
+                    </div>
+                    <div class="slide" style="background-color: #bb9457;">
+                        <div class="slide-left">
+                            <h1>Exclusive Offers</h1>
+                            <p>Grab your vouchers and<br>enjoy special promotions today!</p>
+                            <a href="#specials" class="cta-button">Vouchers & Promo</a>
+                        </div>
+                        <div class="slide-right">
+                            <img src="CSS/img/offers.jpg">
+                        </div>
+                    </div>
+                    <div class="slide" style="background-color: #99582a;">
+                        <div class="slide-left">
+                            <h1>Our Coffee Bar</h1>
+                            <p>Check out our menu and<br>enjoy quality coffee at the best rates.</p>
+                            <a href="#specials" class="cta-button">Coffee Bar Rates</a>
+                        </div>
+                        <div class="slide-right">
+                            <img src="CSS/img/bar-rates.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="dots">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
             </div>
-            <div class="ads-right">
-                <img src="">
-            </div>
-        </section>
+        </div>
         <section class="products-section">
             <div class="products-header">
                 <h2>Hot Coffee</h2>
@@ -466,6 +506,7 @@
     </div>
 </div>
 <div id="specials" class="page">
+    <section class="hero"></section>
     <div class="container">
         <section class="products-section">
             <div class="products-header">
@@ -473,77 +514,93 @@
             </div>
             <div class="product-grid">
                 <article class="card">
-                    <img src="">
-                    <div class="card-body">
-                        <h3>Pistachio Frappe</h3>
-                        <div class="card-meta">
-                            <span class="price">120 PHP</span>
+                    <div class="image-container">
+                        <img src="CSS/img/Pistachio Frappe.jpg">
+                    </div>
+                    <div class="description-overlay">
+                        <div class="card-body">
+                            <h3>Pistachio Frappe</h3>
+                            <div class="card-meta">
+                                <h3>₱120</h3>
+                            </div>
                         </div>
                     </div>
                 </article>
                 <article class="card">
-                    <img src="">
-                    <div class="card-body">
-                        <h3>Matcha Frappe</h3>
-                        <div class="card-meta">
-                            <span class="price">120 PHP</span>
-                        </div>
+                    <div class="image-container">
+                        <img src="CSS/img/Matcha Frappe.jpg">
                     </div>
-                </article>
-                </article>
-                <article class="card">
-                    <img src="">
-                    <div class="card-body">
-                        <h3>Matcha Overload Frappe</h3>
-                        <div class="card-meta">
-                            <span class="price">125 PHP</span>
-                        </div>
-                    </div>
-                </article>
-                </article>
-                <article class="card">
-                    <img src="">
-                    <div class="card-body">
-                        <h3>Classic Mocha Frappe</h3>
-                        <div class="card-meta">
-                            <span class="price">125 PHP</span>
-                        </div>
-                    </div>
-                </article>
-                </article>
-                <article class="card">
-                    <img src="">
-                    <div class="card-body">
-                        <h3>Espresso Brownies</h3>
-                        <div class="card-meta">
-                            <span class="price">150 PHP</span>
+                    <div class="description-overlay">
+                        <div class="card-body">
+                            <h3>Matcha Frappe</h3>
+                            <div class="card-meta">
+                                <h3>₱120</h3>
+                            </div>
                         </div>
                     </div>
                 </article>
                 <article class="card">
-                    <img src="">
-                    <div class="card-body">
-                        <h3>vanilla cream</h3>
-                        <div class="card-meta">
-                            <span class="price">150 PHP</span>
+                    <div class="image-container">
+                        <img src="CSS/img/Classic Mocha Frappe.jpg">
+                    </div>
+                    <div class="description-overlay">
+                        <div class="card-body">
+                            <h3>Classic Mocha Frappe</h3>
+                            <div class="card-meta">
+                                <h3>₱125</h3>
+                            </div>
                         </div>
                     </div>
                 </article>
                 <article class="card">
-                    <img src="">
-                    <div class="card-body">
-                        <h3>Mango yogurt-cheesecake</h3>
-                        <div class="card-meta">
-                            <span class="price">150 PHP</span>
+                    <div class="image-container">
+                        <img src="CSS/img/espresso-brownies.jpg">
+                    </div>
+                    <div class="description-overlay">
+                        <div class="card-body">
+                            <h3>Espresso Brownies</h3>
+                            <div class="card-meta">
+                                <h3>₱150</h3>
+                            </div>
                         </div>
                     </div>
                 </article>
                 <article class="card">
-                    <img src="">
-                    <div class="card-body">
-                        <h3>Chocolate chip-cheesecake</h3>
-                        <div class="card-meta">
-                            <span class="price">150 PHP</span>
+                    <div class="image-container">
+                        <img src="CSS/img/vanilla-cheesecake.jpg">
+                    </div>
+                    <div class="description-overlay">
+                        <div class="card-body">
+                            <h3>Vanilla Cheesecake</h3>
+                            <div class="card-meta">
+                                <h3>₱150</h3>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                        <img src="CSS/img/Mango Yogurt-Cheesecake.jpg">
+                    </div>
+                    <div class="description-overlay">
+                        <div class="card-body">
+                            <h3>Mango Yogurt-Cheesecake</h3>
+                            <div class="card-meta">
+                                <h3>₱150</h3>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                        <img src="CSS/img/chocolate-chip-cheesecake.jpg">
+                    </div>
+                    <div class="description-overlay">
+                        <div class="card-body">
+                            <h3>Chocolate Chip-Cheesecake</h3>
+                            <div class="card-meta">
+                                <h3>₱150</h3>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -733,36 +790,30 @@
     <div class="container">
         <h1>Contact Us</h1>
         <div class="contact-info">
-            <p><strong>Phone:</strong>0921 922 0797</p>
+            <p><strong>Phone:</strong>0921 922 0797 or 0975 536 4805</p>
             <p><strong>Email:</strong>coffeebrent.events@gmail.com</p>
             <p><strong>Social Media:</strong> Follow us on Facebook, Instagram, and Tiktok</p>
-            <a href="#location-map" class="cta-button">Location & Map</a>
-            <a href="#inquiry-form" class="cta-button">Send Inquiry</a>
         </div>
-    </div>
-</div>
-<div id="inquiry-form" class="page">
-    <div class="container">
-        <h1>Inquiry Form</h1>
-        <div class="form">
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message (e.g., event booking, custom order)" rows="5" required></textarea>
-                <button class="cta-button" type="submit">Submit</button>
-            </form>
-        </div>
-    </div>
-</div>
-<div id="location-map" class="page">
-    <div class="container">
-        <h1>Location & Map</h1>
-        <div class="map">
-            <p><strong>Address:</strong> Pasig, Philippines</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3830.1234!2d121.09856!3d14.57583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cbe0dcf39a7b%3A0x123456789abcdef!2sWestbank%20Road%2C%20Maybunga%2C%20Pasig%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v0000000000000"
-                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+        <section id="inquiry-form">
+            <h1>Inquiry Form</h1>
+            <div class="form">
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message (e.g., event booking, custom order)" rows="5" required></textarea>
+                    <button class="cta-button" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section id="location-map">
+            <h1>Location & Map</h1>
+            <div class="map">
+                <p><strong>Address:</strong> Pasig, Philippines</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3830.1234!2d121.09856!3d14.57583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cbe0dcf39a7b%3A0x123456789abcdef!2sWestbank%20Road%2C%20Maybunga%2C%20Pasig%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v0000000000000"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
     </div>
 </div>
 <div id="about" class="page">
